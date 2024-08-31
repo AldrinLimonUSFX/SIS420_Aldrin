@@ -16,9 +16,11 @@ def generar_datos(n=100):
 
 datos = generar_datos()
 
+
 with open('datos_peso_estatura.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Peso', 'Estatura'])  
     writer.writerows(datos) 
     
 print("Datos generados y guardados en 'datos_peso_estatura.csv'.")
+
